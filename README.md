@@ -5,7 +5,7 @@
 
 ## 📄 Introduction
 
-The core reason we hope to use a single model for both generation and understanding is that we believe these two tasks can promote each other. However, existing work has not sufficiently explored this area. In many experiments, performance metrics have declined. We speculate that understanding requires high-level features, while generation requires low-level features. Training them together may cause conflicts. Most solutions involve using separate features for understanding and generation. But using different features for these two tasks is not conducive to their mutual promotion.
+The core reason we hope to use a single model for both generation and understanding is that we believe these two tasks can promote each other. However, existing work has not sufficiently explored this area. In many experiments, performance metrics have declined. Existing work speculate that understanding requires high-level features, while generation requires low-level features. Training them together may cause conflicts. Most solutions involve using separate features for understanding and generation. But using different features for these two tasks is not conducive to their mutual promotion.
 Siglip-VAE integrates high-level Siglip features with the reconstruction capabilities of VAE to create a fused feature that contains both semantics and pixel information. Subsequent generation and understanding tasks can utilize this fused feature, which is beneficial for mutual promotion.
 
 ## 🧪 Experimental Results
