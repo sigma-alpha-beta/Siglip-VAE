@@ -1,0 +1,1 @@
+torchrun evaluate_tokenizer.py --data_path /mnt/guangchao/dataset/imagenet-1k/ImageNet/ILSVRC2012_validation --output_path siglipvae_eval
